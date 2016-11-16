@@ -1,0 +1,4 @@
+#!/bin/bash
+
+stylus ui-flex.styl -o ui-flex.css
+stylus ui-flex.styl -o ui-flex.min.css -c

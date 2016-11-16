@@ -106,6 +106,9 @@
 .ui-flex-wrap {
   flex-wrap: wrap;
 }
+.ui-flex-wrap-reverse {
+  flex-wrap: wrap-reverse !important;
+}
 .ui-flex-in-row > div,
 .ui-flex-fit-in-row > div {
   flex: 1;
@@ -178,4 +181,48 @@
 }
 .ui-fit-width {
   width: 100%;
+}
+.ui-flex-center-children > * {
+  justify-content: center;
+  align-items: center;
+}
+.ui-flex-center-children > *:not(.ui-flex) {
+  display: flex;
+}
+.ui-flex-swag-scroll,
+.ui-flex-swag-scroll-y {
+  overflow-y: auto;
+}
+.ui-flex-swag-scroll::-webkit-scrollbar,
+.ui-flex-swag-scroll-y::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.ui-flex-swag-scroll::-webkit-scrollbar-thumb,
+.ui-flex-swag-scroll-y::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0);
+}
+.ui-flex-swag-scroll::-webkit-scrollbar-thumb:window-inactive,
+.ui-flex-swag-scroll-y::-webkit-scrollbar-thumb:window-inactive {
+  display: none;
+}
+.ui-flex-swag-scroll:hover::-webkit-scrollbar-thumb,
+.ui-flex-swag-scroll-y:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.4);
+}
+.ui-flex-swag-scroll-x {
+  overflow-x: auto;
+}
+.ui-flex-swag-scroll-x::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.ui-flex-swag-scroll-x::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0);
+}
+.ui-flex-swag-scroll-x::-webkit-scrollbar-thumb:window-inactive {
+  display: none;
+}
+.ui-flex-swag-scroll-x:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.4);
 }
