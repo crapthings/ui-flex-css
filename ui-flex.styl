@@ -88,6 +88,9 @@ for num in (1...10)
 .ui-flex-wrap
   flex-wrap wrap
 
+.ui-flex-wrap-reverse
+  flex-wrap wrap-reverse !important
+
 .ui-flex-in-row
 .ui-flex-fit-in-row
   & > div
@@ -104,3 +107,12 @@ for num in (2...13)
 
 .ui-fit-width
   width 100%
+
+//
+
+.ui-flex-center-children
+  & > *
+    justify-content center
+    align-items center
+  & > *:not(.ui-flex)
+    display flex
