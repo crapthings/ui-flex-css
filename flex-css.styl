@@ -20,6 +20,54 @@
   justify-content center
   align-items center
 
+.ui-flex-center-x:not(.ui-flex-column)
+  justify-content center
+
+.ui-flex-center-y:not(.ui-flex-column)
+  align-items center
+
+.ui-flex-column.ui-flex-center-x
+  align-items center
+
+.ui-flex-column.ui-flex-center-y
+  justify-content center
+
+.ui-flex-left:not(.ui-flex-column)
+.ui-flex-row.ui-flex-left
+  display flex
+  justify-content flex-start
+
+.ui-flex-right:not(.ui-flex-column)
+.ui-flex-row.ui-flex-right
+  display flex
+  justify-content flex-end
+
+.ui-flex-top:not(.ui-flex-column)
+.ui-flex-row.ui-flex-top
+  display flex
+  align-items flex-start
+
+.ui-flex-bottom:not(.ui-flex-column)
+.ui-flex-row.ui-flex-bottom
+  display flex
+  align-items flex-end
+
+.ui-flex-column.ui-flex-left
+  display flex
+  align-items flex-start !important
+
+.ui-flex-column.ui-flex-right
+  display flex
+  align-items flex-end !important
+
+.ui-flex-column.ui-flex-top
+  display flex
+  justify-content flex-start !important
+
+.ui-flex-column.ui-flex-bottom
+  display flex
+  justify-content flex-end !important
+
 .ui-flex-scroll
 .ui-flex-scroll-y
   overflow-y auto
