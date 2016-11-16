@@ -19,6 +19,12 @@
 .ui-flex-column
   flex-flow column nowrap
 
+.ui-flex-reverse:not(.ui-flex-column)
+  flex-direction row-reverse
+
+.ui-flex-column.ui-flex-reverse
+  flex-direction column-reverse
+
 .ui-flex-center
   display flex
   justify-content center
@@ -68,8 +74,16 @@
 .ui-flex-scroll-y
   overflow-y auto
 
+.ui-flex-scroll-x
+  overflow-x auto
+
 // flex ratio
 
 for num in (1...10)
   .ui-flex-{num}
     flex num
+
+//
+
+.ui-fit-width
+  width 100%
