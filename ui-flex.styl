@@ -116,3 +116,29 @@ for num in (2...13)
     align-items center
   & > *:not(.ui-flex)
     display flex
+
+// swag scroll
+
+swagScroll =
+  &::-webkit-scrollbar
+      width 8px
+      height 8px
+
+  &::-webkit-scrollbar-thumb
+    background-color rgba(0, 0, 0, 0)
+
+  &::-webkit-scrollbar-thumb:window-inactive
+    display none
+
+  &:hover
+    &::-webkit-scrollbar-thumb
+      background-color rgba(0, 0, 0, .4)
+
+.ui-flex-swag-scroll
+.ui-flex-swag-scroll-y
+  overflow-y auto
+  {swagScroll}
+
+.ui-flex-swag-scroll-x
+  overflow-x auto
+  {swagScroll}
