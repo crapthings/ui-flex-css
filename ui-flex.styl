@@ -83,6 +83,23 @@ for num in (1...10)
   .ui-flex-{num}
     flex num
 
+// flex wrap
+
+.ui-flex-wrap
+  flex-wrap wrap
+
+.ui-flex-in-row
+.ui-flex-fit-in-row
+  & > div
+    flex 1
+
+for num in (2...13)
+  .ui-flex-{num}-in-row
+    &:not(.ui-flex-wrap)
+      flex-wrap wrap
+    & > div
+      width (100 / num)%
+
 //
 
 .ui-fit-width
